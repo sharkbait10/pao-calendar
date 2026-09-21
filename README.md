@@ -4,7 +4,7 @@ Publishes an iCalendar (`.ics`) feed of Panathinaikos fixtures **across all comp
 GitHub Pages, rebuilt twice a day by GitHub Actions. Subscribe once in Google / Apple / Outlook
 Calendar and reschedules, venue changes and final scores arrive on their own.
 
-**Feed:** `https://USER.github.io/REPO/panathinaikos.ics`
+**Feed:** `https://sharkbait10.github.io/pao-calendar/panathinaikos.ics`
 
 ## Setup
 
@@ -12,7 +12,7 @@ Calendar and reschedules, venue changes and final scores arrive on their own.
 2. **Settings → Pages** → Source: *Deploy from a branch* → branch `main`, folder `/docs`.
 3. **Settings → Actions → General** → Workflow permissions: *Read and write permissions*.
    Without this the workflow cannot push its commit.
-4. Replace `USER` and `REPO` in `docs/index.html` and in this README.
+4. Placeholders are already filled in for `sharkbait10/pao-calendar`.
 5. **Actions → Update calendar → Run workflow** to build it immediately.
 
 Locally:
