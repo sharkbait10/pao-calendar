@@ -1,0 +1,594 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//paobc-calendar//Panathinaikos fixtures//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Panathinaikos AKTOR Athens
+X-WR-CALDESC:All competitions: EuroLeague\, Stoiximan GBL\, Super Cup\, Gre
+ ek Cup
+X-WR-TIMEZONE:Europe/Athens
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:E2026_7@paobc-calendar
+DTSTAMP:20260921T135836Z
+DTSTART:20260924T181500Z
+DTEND:20260924T201500Z
+SEQUENCE:0
+SUMMARY:🏠 Panathinaikos AKTOR Athens vs Paris Basketball (EuroLeague / R
+ ound 1)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+LOCATION:TELEKOM CENTER ATHENS\, 37 Kifisias Avenue\, 15123 Marousi
+DESCRIPTION:EuroLeague / Round 1\nVenue: TELEKOM CENTER ATHENS\, 37 Kifisia
+ s Avenue\, 15123 Marousi\nSource: euroleague
+URL:https://www.euroleaguebasketball.net/en/euroleague/game-center/
+END:VEVENT
+BEGIN:VEVENT
+UID:E2026_20@paobc-calendar
+DTSTAMP:20260921T135836Z
+DTSTART:20260930T181500Z
+DTEND:20260930T201500Z
+SEQUENCE:0
+SUMMARY:🏠 Panathinaikos AKTOR Athens vs LDLC ASVEL Villeurbanne (EuroLea
+ gue / Round 2)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+LOCATION:TELEKOM CENTER ATHENS\, 37 Kifisias Avenue\, 15123 Marousi
+DESCRIPTION:EuroLeague / Round 2\nVenue: TELEKOM CENTER ATHENS\, 37 Kifisia
+ s Avenue\, 15123 Marousi\nSource: euroleague
+URL:https://www.euroleaguebasketball.net/en/euroleague/game-center/
+END:VEVENT
+BEGIN:VEVENT
+UID:E2026_30@paobc-calendar
+DTSTAMP:20260921T135836Z
+DTSTART:20261002T181500Z
+DTEND:20261002T201500Z
+SEQUENCE:0
+SUMMARY:🏠 Panathinaikos AKTOR Athens vs Maccabi Rapyd Tel Aviv (EuroLeag
+ ue / Round 3)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+LOCATION:TELEKOM CENTER ATHENS\, 37 Kifisias Avenue\, 15123 Marousi
+DESCRIPTION:EuroLeague / Round 3\nVenue: TELEKOM CENTER ATHENS\, 37 Kifisia
+ s Avenue\, 15123 Marousi\nSource: euroleague
+URL:https://www.euroleaguebasketball.net/en/euroleague/game-center/
+END:VEVENT
+BEGIN:VEVENT
+UID:E2026_36@paobc-calendar
+DTSTAMP:20260921T135836Z
+DTSTART:20261008T181500Z
+DTEND:20261008T201500Z
+SEQUENCE:0
+SUMMARY:🏠 Panathinaikos AKTOR Athens vs Fenerbahce Tarfin Istanbul (Euro
+ League / Round 4)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+LOCATION:TELEKOM CENTER ATHENS\, 37 Kifisias Avenue\, 15123 Marousi
+DESCRIPTION:EuroLeague / Round 4\nVenue: TELEKOM CENTER ATHENS\, 37 Kifisia
+ s Avenue\, 15123 Marousi\nSource: euroleague
+URL:https://www.euroleaguebasketball.net/en/euroleague/game-center/
+END:VEVENT
+BEGIN:VEVENT
+UID:E2026_47@paobc-calendar
+DTSTAMP:20260921T135836Z
+DTSTART:20261013T183000Z
+DTEND:20261013T203000Z
+SEQUENCE:0
+SUMMARY:✈️ Partizan Mozzart Bet Belgrade vs Panathinaikos AKTOR Athens 
+ (EuroLeague / Round 5)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+LOCATION:BELGRADE ARENA\, Bulevar Arsenija Carnojevica 58\, 11070 Belgrade 
+ - Serbia
+DESCRIPTION:EuroLeague / Round 5\nVenue: BELGRADE ARENA\, Bulevar Arsenija 
+ Carnojevica 58\, 11070 Belgrade - Serbia\nSource: euroleague
+URL:https://www.euroleaguebasketball.net/en/euroleague/game-center/
+END:VEVENT
+BEGIN:VEVENT
+UID:E2026_60@paobc-calendar
+DTSTAMP:20260921T135836Z
+DTSTART:20261016T181500Z
+DTEND:20261016T201500Z
+SEQUENCE:0
+SUMMARY:🏠 Panathinaikos AKTOR Athens vs Hapoel IBI Tel Aviv (EuroLeague 
+ / Round 6)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+LOCATION:TELEKOM CENTER ATHENS\, 37 Kifisias Avenue\, 15123 Marousi
+DESCRIPTION:EuroLeague / Round 6\nVenue: TELEKOM CENTER ATHENS\, 37 Kifisia
+ s Avenue\, 15123 Marousi\nSource: euroleague
+URL:https://www.euroleaguebasketball.net/en/euroleague/game-center/
+END:VEVENT
+BEGIN:VEVENT
+UID:E2026_67@paobc-calendar
+DTSTAMP:20260921T135836Z
+DTSTART:20261022T181500Z
+DTEND:20261022T201500Z
+SEQUENCE:0
+SUMMARY:🏠 Panathinaikos AKTOR Athens vs Kosner Baskonia Vitoria-Gasteiz 
+ (EuroLeague / Round 7)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+LOCATION:TELEKOM CENTER ATHENS\, 37 Kifisias Avenue\, 15123 Marousi
+DESCRIPTION:EuroLeague / Round 7\nVenue: TELEKOM CENTER ATHENS\, 37 Kifisia
+ s Avenue\, 15123 Marousi\nSource: euroleague
+URL:https://www.euroleaguebasketball.net/en/euroleague/game-center/
+END:VEVENT
+BEGIN:VEVENT
+UID:E2026_76@paobc-calendar
+DTSTAMP:20260921T135836Z
+DTSTART:20261027T191500Z
+DTEND:20261027T211500Z
+SEQUENCE:0
+SUMMARY:🏠 Panathinaikos AKTOR Athens vs Armani Olimpia Milan (EuroLeague
+  / Round 8)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+LOCATION:TELEKOM CENTER ATHENS\, 37 Kifisias Avenue\, 15123 Marousi
+DESCRIPTION:EuroLeague / Round 8\nVenue: TELEKOM CENTER ATHENS\, 37 Kifisia
+ s Avenue\, 15123 Marousi\nSource: euroleague
+URL:https://www.euroleaguebasketball.net/en/euroleague/game-center/
+END:VEVENT
+BEGIN:VEVENT
+UID:E2026_88@paobc-calendar
+DTSTAMP:20260921T135836Z
+DTSTART:20261030T173000Z
+DTEND:20261030T193000Z
+SEQUENCE:0
+SUMMARY:✈️ Anadolu Efes Istanbul vs Panathinaikos AKTOR Athens (EuroLea
+ gue / Round 9)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+LOCATION:TURKCELL BASKETBALL DEVELOPMENT CENTER\, Kazliçesme Mah. 10. Yil 
+ Caddesi No: 2/1 Zeytinburnu / Turkiye
+DESCRIPTION:EuroLeague / Round 9\nVenue: TURKCELL BASKETBALL DEVELOPMENT CE
+ NTER\, Kazliçesme Mah. 10. Yil Caddesi No: 2/1 Zeytinburnu / Turkiye\nSou
+ rce: euroleague
+URL:https://www.euroleaguebasketball.net/en/euroleague/game-center/
+END:VEVENT
+BEGIN:VEVENT
+UID:E2026_91@paobc-calendar
+DTSTAMP:20260921T135836Z
+DTSTART:20261104T194500Z
+DTEND:20261104T214500Z
+SEQUENCE:0
+SUMMARY:✈️ Real Madrid vs Panathinaikos AKTOR Athens (EuroLeague / Roun
+ d 10)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+LOCATION:MOVISTAR ARENA\, Avenida de Felipe II 1\, 28009\, Madrid
+DESCRIPTION:EuroLeague / Round 10\nVenue: MOVISTAR ARENA\, Avenida de Felip
+ e II 1\, 28009\, Madrid\nSource: euroleague
+URL:https://www.euroleaguebasketball.net/en/euroleague/game-center/
+END:VEVENT
+BEGIN:VEVENT
+UID:E2026_110@paobc-calendar
+DTSTAMP:20260921T135836Z
+DTSTART:20261113T191500Z
+DTEND:20261113T211500Z
+SEQUENCE:0
+SUMMARY:🏠 Panathinaikos AKTOR Athens vs FC Barcelona (EuroLeague / Round
+  11)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+LOCATION:TELEKOM CENTER ATHENS\, 37 Kifisias Avenue\, 15123 Marousi
+DESCRIPTION:EuroLeague / Round 11\nVenue: TELEKOM CENTER ATHENS\, 37 Kifisi
+ as Avenue\, 15123 Marousi\nSource: euroleague
+URL:https://www.euroleaguebasketball.net/en/euroleague/game-center/
+END:VEVENT
+BEGIN:VEVENT
+UID:E2026_119@paobc-calendar
+DTSTAMP:20260921T135836Z
+DTSTART:20261117T200000Z
+DTEND:20261117T220000Z
+SEQUENCE:0
+SUMMARY:✈️ Virtus Bologna vs Panathinaikos AKTOR Athens (EuroLeague / R
+ ound 12)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+LOCATION:PALADOZZA\, Via Nannetti 1\, 40122 Bologna - Italy
+DESCRIPTION:EuroLeague / Round 12\nVenue: PALADOZZA\, Via Nannetti 1\, 4012
+ 2 Bologna - Italy\nSource: euroleague
+URL:https://www.euroleaguebasketball.net/en/euroleague/game-center/
+END:VEVENT
+BEGIN:VEVENT
+UID:E2026_121@paobc-calendar
+DTSTAMP:20260921T135836Z
+DTSTART:20261119T180000Z
+DTEND:20261119T200000Z
+SEQUENCE:0
+SUMMARY:✈️ Zalgiris Kaunas vs Panathinaikos AKTOR Athens (EuroLeague / 
+ Round 13)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+LOCATION:ZALGIRIO ARENA\, Karaliaus Mindaugo Av. 50\, 44287 Kaunas
+DESCRIPTION:EuroLeague / Round 13\nVenue: ZALGIRIO ARENA\, Karaliaus Mindau
+ go Av. 50\, 44287 Kaunas\nSource: euroleague
+URL:https://www.euroleaguebasketball.net/en/euroleague/game-center/
+END:VEVENT
+BEGIN:VEVENT
+UID:E2026_135@paobc-calendar
+DTSTAMP:20260921T135836Z
+DTSTART:20261124T193000Z
+DTEND:20261124T213000Z
+SEQUENCE:0
+SUMMARY:✈️ Valencia Basket vs Panathinaikos AKTOR Athens (EuroLeague / 
+ Round 14)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+LOCATION:ROIG ARENA\, C/ del Bomber Ramon Duart\, 12\, Quatre Carreres\, 46
+ 013 Valencia 
+DESCRIPTION:EuroLeague / Round 14\nVenue: ROIG ARENA\, C/ del Bomber Ramon 
+ Duart\, 12\, Quatre Carreres\, 46013 Valencia \nSource: euroleague
+URL:https://www.euroleaguebasketball.net/en/euroleague/game-center/
+END:VEVENT
+BEGIN:VEVENT
+UID:E2026_146@paobc-calendar
+DTSTAMP:20260921T135836Z
+DTSTART:20261204T170000Z
+DTEND:20261204T190000Z
+SEQUENCE:0
+SUMMARY:✈️ Besiktas Istanbul vs Panathinaikos AKTOR Athens (EuroLeague 
+ / Round 15)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+LOCATION:TURKCELL BASKETBALL DEVELOPMENT CENTER\, Kazliçesme Mah. 10. Yil 
+ Caddesi No: 2/1 Zeytinburnu / Turkiye
+DESCRIPTION:EuroLeague / Round 15\nVenue: TURKCELL BASKETBALL DEVELOPMENT C
+ ENTER\, Kazliçesme Mah. 10. Yil Caddesi No: 2/1 Zeytinburnu / Turkiye\nSo
+ urce: euroleague
+URL:https://www.euroleaguebasketball.net/en/euroleague/game-center/
+END:VEVENT
+BEGIN:VEVENT
+UID:E2026_160@paobc-calendar
+DTSTAMP:20260921T135836Z
+DTSTART:20261211T191500Z
+DTEND:20261211T211500Z
+SEQUENCE:0
+SUMMARY:🏠 Panathinaikos AKTOR Athens vs Olympiacos Piraeus (EuroLeague /
+  Round 16)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+LOCATION:TELEKOM CENTER ATHENS\, 37 Kifisias Avenue\, 15123 Marousi
+DESCRIPTION:EuroLeague / Round 16\nVenue: TELEKOM CENTER ATHENS\, 37 Kifisi
+ as Avenue\, 15123 Marousi\nSource: euroleague
+URL:https://www.euroleaguebasketball.net/en/euroleague/game-center/
+END:VEVENT
+BEGIN:VEVENT
+UID:E2026_170@paobc-calendar
+DTSTAMP:20260921T135836Z
+DTSTART:20261216T191500Z
+DTEND:20261216T211500Z
+SEQUENCE:0
+SUMMARY:🏠 Panathinaikos AKTOR Athens vs Crvena Zvezda Meridianbet Belgra
+ de (EuroLeague / Round 17)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+LOCATION:TELEKOM CENTER ATHENS\, 37 Kifisias Avenue\, 15123 Marousi
+DESCRIPTION:EuroLeague / Round 17\nVenue: TELEKOM CENTER ATHENS\, 37 Kifisi
+ as Avenue\, 15123 Marousi\nSource: euroleague
+URL:https://www.euroleaguebasketball.net/en/euroleague/game-center/
+END:VEVENT
+BEGIN:VEVENT
+UID:E2026_179@paobc-calendar
+DTSTAMP:20260921T135836Z
+DTSTART:20261218T190000Z
+DTEND:20261218T210000Z
+SEQUENCE:0
+SUMMARY:✈️ FC Bayern Munich vs Panathinaikos AKTOR Athens (EuroLeague /
+  Round 18)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+LOCATION:SAP GARDEN\, Toni-Merkens-Weg 4\, 80809 Munich - Germany
+DESCRIPTION:EuroLeague / Round 18\nVenue: SAP GARDEN\, Toni-Merkens-Weg 4\,
+  80809 Munich - Germany\nSource: euroleague
+URL:https://www.euroleaguebasketball.net/en/euroleague/game-center/
+END:VEVENT
+BEGIN:VEVENT
+UID:E2026_187@paobc-calendar
+DTSTAMP:20260921T135836Z
+DTSTART:20261223T160000Z
+DTEND:20261223T180000Z
+SEQUENCE:0
+SUMMARY:✈️ Dubai Basketball vs Panathinaikos AKTOR Athens (EuroLeague /
+  Round 19)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+LOCATION:COCA-COLA ARENA\, Al Wasl - سٹی واک - Dubai - United Arab Em
+ irates
+DESCRIPTION:EuroLeague / Round 19\nVenue: COCA-COLA ARENA\, Al Wasl - سٹ
+ ی واک - Dubai - United Arab Emirates\nSource: euroleague
+URL:https://www.euroleaguebasketball.net/en/euroleague/game-center/
+END:VEVENT
+BEGIN:VEVENT
+UID:E2026_193@paobc-calendar
+DTSTAMP:20260921T135836Z
+DTSTART:20261229T174500Z
+DTEND:20261229T194500Z
+SEQUENCE:0
+SUMMARY:✈️ Fenerbahce Tarfin Istanbul vs Panathinaikos AKTOR Athens (Eu
+ roLeague / Round 20)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+LOCATION:ULKER SPORTS AND EVENT HALL\, Barbaros Mah. Ihlamur Sok. Batı Ata
+ şehir\, 34764 Istanbul\, Turkiye 
+DESCRIPTION:EuroLeague / Round 20\nVenue: ULKER SPORTS AND EVENT HALL\, Bar
+ baros Mah. Ihlamur Sok. Batı Ataşehir\, 34764 Istanbul\, Turkiye \nSourc
+ e: euroleague
+URL:https://www.euroleaguebasketball.net/en/euroleague/game-center/
+END:VEVENT
+BEGIN:VEVENT
+UID:E2026_203@paobc-calendar
+DTSTAMP:20260921T135836Z
+DTSTART:20270107T170000Z
+DTEND:20270107T190000Z
+SEQUENCE:0
+SUMMARY:✈️ Maccabi Rapyd Tel Aviv vs Panathinaikos AKTOR Athens (EuroLe
+ ague / Round 21)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+LOCATION:ALEKSANDAR NIKOLIC HALL\, Carlija Caplina 39\, Belgrade 11000\, Se
+ rbia
+DESCRIPTION:EuroLeague / Round 21\nVenue: ALEKSANDAR NIKOLIC HALL\, Carlija
+  Caplina 39\, Belgrade 11000\, Serbia\nSource: euroleague
+URL:https://www.euroleaguebasketball.net/en/euroleague/game-center/
+END:VEVENT
+BEGIN:VEVENT
+UID:E2026_218@paobc-calendar
+DTSTAMP:20260921T135836Z
+DTSTART:20270112T191500Z
+DTEND:20270112T211500Z
+SEQUENCE:0
+SUMMARY:🏠 Panathinaikos AKTOR Athens vs Valencia Basket (EuroLeague / Ro
+ und 22)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+LOCATION:TELEKOM CENTER ATHENS\, 37 Kifisias Avenue\, 15123 Marousi
+DESCRIPTION:EuroLeague / Round 22\nVenue: TELEKOM CENTER ATHENS\, 37 Kifisi
+ as Avenue\, 15123 Marousi\nSource: euroleague
+URL:https://www.euroleaguebasketball.net/en/euroleague/game-center/
+END:VEVENT
+BEGIN:VEVENT
+UID:E2026_225@paobc-calendar
+DTSTAMP:20260921T135836Z
+DTSTART:20270114T191500Z
+DTEND:20270114T211500Z
+SEQUENCE:0
+SUMMARY:🏠 Panathinaikos AKTOR Athens vs FC Bayern Munich (EuroLeague / R
+ ound 23)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+LOCATION:TELEKOM CENTER ATHENS\, 37 Kifisias Avenue\, 15123 Marousi
+DESCRIPTION:EuroLeague / Round 23\nVenue: TELEKOM CENTER ATHENS\, 37 Kifisi
+ as Avenue\, 15123 Marousi\nSource: euroleague
+URL:https://www.euroleaguebasketball.net/en/euroleague/game-center/
+END:VEVENT
+BEGIN:VEVENT
+UID:E2026_231@paobc-calendar
+DTSTAMP:20260921T135836Z
+DTSTART:20270121T170000Z
+DTEND:20270121T190000Z
+SEQUENCE:0
+SUMMARY:✈️ Hapoel IBI Tel Aviv vs Panathinaikos AKTOR Athens (EuroLeagu
+ e / Round 24)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+LOCATION:ARENA 8888 SOFIA
+DESCRIPTION:EuroLeague / Round 24\nVenue: ARENA 8888 SOFIA\nSource: eurolea
+ gue
+URL:https://www.euroleaguebasketball.net/en/euroleague/game-center/
+END:VEVENT
+BEGIN:VEVENT
+UID:E2026_250@paobc-calendar
+DTSTAMP:20260921T135836Z
+DTSTART:20270129T191500Z
+DTEND:20270129T211500Z
+SEQUENCE:0
+SUMMARY:🏠 Panathinaikos AKTOR Athens vs Anadolu Efes Istanbul (EuroLeagu
+ e / Round 25)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+LOCATION:TELEKOM CENTER ATHENS\, 37 Kifisias Avenue\, 15123 Marousi
+DESCRIPTION:EuroLeague / Round 25\nVenue: TELEKOM CENTER ATHENS\, 37 Kifisi
+ as Avenue\, 15123 Marousi\nSource: euroleague
+URL:https://www.euroleaguebasketball.net/en/euroleague/game-center/
+END:VEVENT
+BEGIN:VEVENT
+UID:E2026_256@paobc-calendar
+DTSTAMP:20260921T135836Z
+DTSTART:20270202T191500Z
+DTEND:20270202T211500Z
+SEQUENCE:0
+SUMMARY:🏠 Panathinaikos AKTOR Athens vs Dubai Basketball (EuroLeague / R
+ ound 26)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+LOCATION:TELEKOM CENTER ATHENS\, 37 Kifisias Avenue\, 15123 Marousi
+DESCRIPTION:EuroLeague / Round 26\nVenue: TELEKOM CENTER ATHENS\, 37 Kifisi
+ as Avenue\, 15123 Marousi\nSource: euroleague
+URL:https://www.euroleaguebasketball.net/en/euroleague/game-center/
+END:VEVENT
+BEGIN:VEVENT
+UID:E2026_267@paobc-calendar
+DTSTAMP:20260921T135836Z
+DTSTART:20270205T193000Z
+DTEND:20270205T213000Z
+SEQUENCE:0
+SUMMARY:✈️ Armani Olimpia Milan vs Panathinaikos AKTOR Athens (EuroLeag
+ ue / Round 27)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+LOCATION:UNIPOL FORUM\, Via G. Di Vittorio 6\, 20090 Assago
+DESCRIPTION:EuroLeague / Round 27\nVenue: UNIPOL FORUM\, Via G. Di Vittorio
+  6\, 20090 Assago\nSource: euroleague
+URL:https://www.euroleaguebasketball.net/en/euroleague/game-center/
+END:VEVENT
+BEGIN:VEVENT
+UID:E2026_280@paobc-calendar
+DTSTAMP:20260921T135836Z
+DTSTART:20270212T191500Z
+DTEND:20270212T211500Z
+SEQUENCE:0
+SUMMARY:✈️ Olympiacos Piraeus vs Panathinaikos AKTOR Athens (EuroLeague
+  / Round 28)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+LOCATION:PEACE AND FRIENDSHIP STADIUM\, Ethnarchou Makariou Av.\, Piraeus
+DESCRIPTION:EuroLeague / Round 28\nVenue: PEACE AND FRIENDSHIP STADIUM\, Et
+ hnarchou Makariou Av.\, Piraeus\nSource: euroleague
+URL:https://www.euroleaguebasketball.net/en/euroleague/game-center/
+END:VEVENT
+BEGIN:VEVENT
+UID:E2026_285@paobc-calendar
+DTSTAMP:20260921T135836Z
+DTSTART:20270304T191500Z
+DTEND:20270304T211500Z
+SEQUENCE:0
+SUMMARY:🏠 Panathinaikos AKTOR Athens vs Besiktas Istanbul (EuroLeague / 
+ Round 29)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+LOCATION:TELEKOM CENTER ATHENS\, 37 Kifisias Avenue\, 15123 Marousi
+DESCRIPTION:EuroLeague / Round 29\nVenue: TELEKOM CENTER ATHENS\, 37 Kifisi
+ as Avenue\, 15123 Marousi\nSource: euroleague
+URL:https://www.euroleaguebasketball.net/en/euroleague/game-center/
+END:VEVENT
+BEGIN:VEVENT
+UID:E2026_294@paobc-calendar
+DTSTAMP:20260921T135836Z
+DTSTART:20270309T193000Z
+DTEND:20270309T213000Z
+SEQUENCE:0
+SUMMARY:✈️ Kosner Baskonia Vitoria-Gasteiz vs Panathinaikos AKTOR Athen
+ s (EuroLeague / Round 30)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+LOCATION:BUESA ARENA\, Ctra.  Zurbano s/n\, 01013 Vitoria
+DESCRIPTION:EuroLeague / Round 30\nVenue: BUESA ARENA\, Ctra.  Zurbano s/n\
+ , 01013 Vitoria\nSource: euroleague
+URL:https://www.euroleaguebasketball.net/en/euroleague/game-center/
+END:VEVENT
+BEGIN:VEVENT
+UID:E2026_304@paobc-calendar
+DTSTAMP:20260921T135836Z
+DTSTART:20270311T194500Z
+DTEND:20270311T214500Z
+SEQUENCE:0
+SUMMARY:✈️ Paris Basketball vs Panathinaikos AKTOR Athens (EuroLeague /
+  Round 31)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+LOCATION:ADIDAS ARENA\, 56 Boulevard Ney\, 75018 Paris\, France
+DESCRIPTION:EuroLeague / Round 31\nVenue: ADIDAS ARENA\, 56 Boulevard Ney\,
+  75018 Paris\, France\nSource: euroleague
+URL:https://www.euroleaguebasketball.net/en/euroleague/game-center/
+END:VEVENT
+BEGIN:VEVENT
+UID:E2026_315@paobc-calendar
+DTSTAMP:20260921T135836Z
+DTSTART:20270318T191500Z
+DTEND:20270318T211500Z
+SEQUENCE:0
+SUMMARY:🏠 Panathinaikos AKTOR Athens vs Zalgiris Kaunas (EuroLeague / Ro
+ und 32)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+LOCATION:TELEKOM CENTER ATHENS\, 37 Kifisias Avenue\, 15123 Marousi
+DESCRIPTION:EuroLeague / Round 32\nVenue: TELEKOM CENTER ATHENS\, 37 Kifisi
+ as Avenue\, 15123 Marousi\nSource: euroleague
+URL:https://www.euroleaguebasketball.net/en/euroleague/game-center/
+END:VEVENT
+BEGIN:VEVENT
+UID:E2026_323@paobc-calendar
+DTSTAMP:20260921T135836Z
+DTSTART:20270323T190000Z
+DTEND:20270323T210000Z
+SEQUENCE:0
+SUMMARY:✈️ LDLC ASVEL Villeurbanne vs Panathinaikos AKTOR Athens (EuroL
+ eague / Round 33)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+LOCATION:LDLC ARENA\, Avenue Simone Veil 5\, 69150 Décines-Charpieu - Fran
+ ce
+DESCRIPTION:EuroLeague / Round 33\nVenue: LDLC ARENA\, Avenue Simone Veil 5
+ \, 69150 Décines-Charpieu - France\nSource: euroleague
+URL:https://www.euroleaguebasketball.net/en/euroleague/game-center/
+END:VEVENT
+BEGIN:VEVENT
+UID:E2026_334@paobc-calendar
+DTSTAMP:20260921T135836Z
+DTSTART:20270325T191500Z
+DTEND:20270325T211500Z
+SEQUENCE:0
+SUMMARY:🏠 Panathinaikos AKTOR Athens vs Partizan Mozzart Bet Belgrade (E
+ uroLeague / Round 34)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+LOCATION:TELEKOM CENTER ATHENS\, 37 Kifisias Avenue\, 15123 Marousi
+DESCRIPTION:EuroLeague / Round 34\nVenue: TELEKOM CENTER ATHENS\, 37 Kifisi
+ as Avenue\, 15123 Marousi\nSource: euroleague
+URL:https://www.euroleaguebasketball.net/en/euroleague/game-center/
+END:VEVENT
+BEGIN:VEVENT
+UID:E2026_349@paobc-calendar
+DTSTAMP:20260921T135836Z
+DTSTART:20270402T183000Z
+DTEND:20270402T203000Z
+SEQUENCE:0
+SUMMARY:✈️ FC Barcelona vs Panathinaikos AKTOR Athens (EuroLeague / Rou
+ nd 35)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+LOCATION:PALAU BLAUGRANA\, Aristides Maillol Av S/N\, 08028 Barcelona
+DESCRIPTION:EuroLeague / Round 35\nVenue: PALAU BLAUGRANA\, Aristides Maill
+ ol Av S/N\, 08028 Barcelona\nSource: euroleague
+URL:https://www.euroleaguebasketball.net/en/euroleague/game-center/
+END:VEVENT
+BEGIN:VEVENT
+UID:E2026_352@paobc-calendar
+DTSTAMP:20260921T135836Z
+DTSTART:20270406T183000Z
+DTEND:20270406T203000Z
+SEQUENCE:0
+SUMMARY:✈️ Crvena Zvezda Meridianbet Belgrade vs Panathinaikos AKTOR At
+ hens (EuroLeague / Round 36)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+LOCATION:BELGRADE ARENA\, Bulevar Arsenija Carnojevica 58\, 11070 Belgrade 
+ - Serbia
+DESCRIPTION:EuroLeague / Round 36\nVenue: BELGRADE ARENA\, Bulevar Arsenija
+  Carnojevica 58\, 11070 Belgrade - Serbia\nSource: euroleague
+URL:https://www.euroleaguebasketball.net/en/euroleague/game-center/
+END:VEVENT
+BEGIN:VEVENT
+UID:E2026_367@paobc-calendar
+DTSTAMP:20260921T135836Z
+DTSTART:20270408T181500Z
+DTEND:20270408T201500Z
+SEQUENCE:0
+SUMMARY:🏠 Panathinaikos AKTOR Athens vs Virtus Bologna (EuroLeague / Rou
+ nd 37)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+LOCATION:TELEKOM CENTER ATHENS\, 37 Kifisias Avenue\, 15123 Marousi
+DESCRIPTION:EuroLeague / Round 37\nVenue: TELEKOM CENTER ATHENS\, 37 Kifisi
+ as Avenue\, 15123 Marousi\nSource: euroleague
+URL:https://www.euroleaguebasketball.net/en/euroleague/game-center/
+END:VEVENT
+BEGIN:VEVENT
+UID:E2026_376@paobc-calendar
+DTSTAMP:20260921T135836Z
+DTSTART:20270415T181500Z
+DTEND:20270415T201500Z
+SEQUENCE:0
+SUMMARY:🏠 Panathinaikos AKTOR Athens vs Real Madrid (EuroLeague / Round 
+ 38)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+LOCATION:TELEKOM CENTER ATHENS\, 37 Kifisias Avenue\, 15123 Marousi
+DESCRIPTION:EuroLeague / Round 38\nVenue: TELEKOM CENTER ATHENS\, 37 Kifisi
+ as Avenue\, 15123 Marousi\nSource: euroleague
+URL:https://www.euroleaguebasketball.net/en/euroleague/game-center/
+END:VEVENT
+END:VCALENDAR

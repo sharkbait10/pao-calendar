@@ -1,0 +1,64 @@
+name: Update calendar
+
+on:
+  schedule:
+    # 05:17 and 23:17 UTC. Odd minutes are deliberate - GitHub's scheduler is
+    # heavily oversubscribed on the hour and delays jobs that ask for :00.
+    - cron: "17 5,23 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - ".github/workflows/update-calendar.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-calendar
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Playwright
+        run: pip install -r requirements.txt
+
+      # Chromium is ~150 MB; caching keeps most runs to a few seconds here.
+      - name: Cache Chromium
+        id: browser-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-chromium-${{ runner.os }}
+
+      - name: Install Chromium
+        if: steps.browser-cache.outputs.cache-hit != 'true'
+        run: playwright install --with-deps chromium
+
+      - name: Install system libraries
+        if: steps.browser-cache.outputs.cache-hit == 'true'
+        run: playwright install-deps chromium
+
+      - name: Build calendar
+        run: python scripts/build_calendar.py
+
+      - name: Commit if changed
+        run: |
+          if [[ -z "$(git status --porcelain docs/)" ]]; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/
+          git commit -m "Update fixtures ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+          git push
