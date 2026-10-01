@@ -18,6 +18,8 @@ Two quirks of the page, both handled below:
 from __future__ import annotations
 
 import re
+import sys
+import unicodedata
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
@@ -124,6 +126,15 @@ def _parse_card(card: str) -> dict | None:
 
     start = _parse_datetime(_text(date_match.group(1)), _text(date_match.group(2)))
     if not start:
+        # A card with real team names but an unreadable date is a fixture we are
+        # losing. Never swallow this quietly - that is how the Super Cup game
+        # against PAOK went missing.
+        print(
+            f"WARNING: paobc.gr fixture skipped, unparseable date "
+            f"{_text(date_match.group(1))!r} {_text(date_match.group(2))!r} "
+            f"({names[0]} vs {names[1]})",
+            file=sys.stderr,
+        )
         return None
 
     stadium = STADIUM_RE.search(card)
@@ -144,16 +155,45 @@ def _parse_card(card: str) -> dict | None:
     }
 
 
-def _parse_datetime(date_text: str, time_text: str) -> datetime | None:
-    """'Thursday, 24 Sep 2026' + '21:15' (Athens local) -> aware UTC datetime."""
-    cleaned = date_text.split(",", 1)[-1].strip()
-    for fmt in ("%d %b %Y", "%d %B %Y"):
+def _strip_accents(value: str) -> str:
+    return "".join(
+        char for char in unicodedata.normalize("NFD", value)
+        if not unicodedata.combining(char)
+    )
+
+
+# The English site renders domestic fixtures with Greek month names
+# ("Σαββατο, 26 Σεπ 2026"), so both languages have to be understood.
+# Longest keys are matched first: ΙΟΥΝ/ΙΟΥΛ need four characters to separate,
+# and ΜΑΡ (March) must not swallow ΜΑΙ (May).
+GREEK_MONTHS = {
+    "ΙΑΝ": 1, "ΦΕΒ": 2, "ΜΑΡ": 3, "ΑΠΡ": 4, "ΜΑΙ": 5, "ΜΑΗ": 5,
+    "ΙΟΥΝ": 6, "ΙΟΥΛ": 7, "ΑΥΓ": 8, "ΣΕΠ": 9, "ΟΚΤ": 10, "ΝΟΕ": 11, "ΔΕΚ": 12,
+}
+
+
+def _month_number(token: str) -> int | None:
+    for fmt in ("%b", "%B"):
         try:
-            day = datetime.strptime(cleaned, fmt)
-            break
+            return datetime.strptime(token, fmt).month
         except ValueError:
-            continue
-    else:
+            pass
+    normalised = _strip_accents(token).upper()
+    for name in sorted(GREEK_MONTHS, key=len, reverse=True):
+        if normalised.startswith(name):
+            return GREEK_MONTHS[name]
+    return None
+
+
+def _parse_datetime(date_text: str, time_text: str) -> datetime | None:
+    """'Thursday, 24 Sep 2026' or 'Σαββατο, 26 Σεπ 2026' + '21:00' -> aware UTC."""
+    cleaned = date_text.split(",", 1)[-1].strip()
+    parts = re.match(r"(\d{1,2})\s+(\S+)\s+(\d{4})", cleaned)
+    if not parts:
+        return None
+
+    month = _month_number(parts.group(2))
+    if month is None:
         return None
 
     hour, minute = 0, 0
@@ -161,7 +201,10 @@ def _parse_datetime(date_text: str, time_text: str) -> datetime | None:
     if clock:
         hour, minute = int(clock.group(1)), int(clock.group(2))
 
-    local = day.replace(hour=hour, minute=minute, tzinfo=ATHENS)
+    local = datetime(
+        int(parts.group(3)), month, int(parts.group(1)),
+        hour, minute, tzinfo=ATHENS,
+    )
     return local.astimezone(timezone.utc)
 
 
