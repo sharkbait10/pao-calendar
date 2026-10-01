@@ -272,26 +272,43 @@ def main() -> int:
 
     body = render(events, sequences)
 
+    calendar_changed = True
     if output_path.exists():
-        if strip_dtstamp(output_path.read_bytes().decode("utf-8")) == strip_dtstamp(body):
-            print("no changes - calendar left untouched")
-            return 0
+        calendar_changed = strip_dtstamp(output_path.read_bytes().decode("utf-8")) != strip_dtstamp(body)
 
-    output_path.write_text(
-        body.replace(DTSTAMP_TOKEN, stamp(datetime.now(timezone.utc))),
-        encoding="utf-8", newline="",
-    )
-    state_path.write_text(
-        json.dumps(
-            {
-                "updated": datetime.now(timezone.utc).isoformat(),
-                "warnings": problems,
-                "events": new_state,
-            },
-            indent=2,
-        ),
-        encoding="utf-8",
-    )
+    # The state file must be written even when the calendar itself is unchanged,
+    # otherwise the SEQUENCE baseline is never recorded and the first real
+    # reschedule would go out at SEQUENCE:0 - the same value subscribers already
+    # hold, which some clients take as "nothing to see here". Comparing the event
+    # map (not the timestamp) keeps this from producing a commit every day.
+    state_changed = previous != new_state or not state_path.exists()
+
+    if not calendar_changed and not state_changed:
+        print("no changes - calendar left untouched")
+        return 0
+
+    if calendar_changed:
+        output_path.write_text(
+            body.replace(DTSTAMP_TOKEN, stamp(datetime.now(timezone.utc))),
+            encoding="utf-8", newline="",
+        )
+
+    if state_changed:
+        state_path.write_text(
+            json.dumps(
+                {
+                    "updated": datetime.now(timezone.utc).isoformat(),
+                    "warnings": problems,
+                    "events": new_state,
+                },
+                indent=2,
+            ),
+            encoding="utf-8",
+        )
+
+    if not calendar_changed:
+        print("calendar unchanged; recorded sequence baseline")
+        return 0
 
     by_competition: dict[str, int] = {}
     for fixture in fixtures:
