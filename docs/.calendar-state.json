@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-01T02:13:12.923497+00:00",
+  "updated": "2026-10-01T09:07:31.271905+00:00",
   "warnings": [],
   "events": {
     "E2026_376@paobc-calendar": {
@@ -152,6 +152,10 @@
     },
     "E2026_7@paobc-calendar": {
       "fingerprint": "b0e737693fe96136",
+      "sequence": 0
+    },
+    "paobc-super-cup-panathinaikos-bc-aktor-paok-bc-1@paobc-calendar": {
+      "fingerprint": "8e81764bfeba7427",
       "sequence": 0
     }
   }
