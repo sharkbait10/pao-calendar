@@ -90,6 +90,27 @@ def _is_home(fixture: dict) -> bool:
     return TEAM_MARKER in fixture["home"].upper()
 
 
+# Club acronyms that must stay capitalised. Tokens without vowels (BC, FC, KK)
+# are detected automatically; these are the ones that would otherwise be
+# mangled into "Paok". Add to the set if an opponent shows up looking wrong.
+ACRONYMS = {"PAOK", "AEK", "PAO", "ASVEL", "LDLC", "IBI", "EA7", "CSKA", "UCAM", "KK"}
+VOWELS = set("AEIOU")
+
+
+def tidy_name(name: str) -> str:
+    """paobc.gr shouts every name in caps; the EuroLeague feed does not."""
+    if not name.isupper():
+        return name
+    words = []
+    for word in name.split():
+        core = word.strip(".,-")
+        if core in ACRONYMS or not (set(core) & VOWELS):
+            words.append(word)
+        else:
+            words.append(word.capitalize())
+    return " ".join(words)
+
+
 # --------------------------------------------------------------------------- #
 # Formatting
 # --------------------------------------------------------------------------- #
@@ -97,23 +118,35 @@ def _is_home(fixture: dict) -> bool:
 def to_event(fixture: dict) -> dict:
     home, away = fixture["home"], fixture["away"]
     played = fixture["home_score"] is not None and fixture["away_score"] is not None
-    prefix = "🏠" if _is_home(fixture) else "✈️"
+    at_home = _is_home(fixture)
+
+    # Titles lead with the opponent. Our own name is the one thing you already
+    # know, and in a month view the summary is usually truncated - so spending
+    # the first 25 characters on "Panathinaikos AKTOR Athens" hides the only
+    # detail worth seeing at a glance.
+    opponent = tidy_name(_opponent(fixture))
+    summary = f"{'🏠 vs' if at_home else '✈️ @'} {opponent}"
 
     if played:
-        summary = f"{prefix} {home} {fixture['home_score']}-{fixture['away_score']} {away}"
-    else:
-        summary = f"{prefix} {home} vs {away}"
+        ours = fixture["home_score"] if at_home else fixture["away_score"]
+        theirs = fixture["away_score"] if at_home else fixture["home_score"]
+        result = "W" if ours > theirs else ("L" if ours < theirs else "D")
+        summary = f"{summary} {result} {ours}-{theirs}"   # our score first
 
     tag = " / ".join(part for part in (fixture["competition"], fixture["round"]) if part)
     if tag:
         summary = f"{summary} ({tag})"
 
-    description = [tag] if tag else []
+    # The description still names both sides, so the full matchup is one tap away.
+    description = [f"{tidy_name(home)} vs {tidy_name(away)}"]
+    if tag:
+        description.append(tag)
     if fixture["venue"]:
         description.append(f"Venue: {fixture['venue']}")
     if played:
         description.append(
-            f"Final: {home} {fixture['home_score']} - {fixture['away_score']} {away}"
+            f"Final: {tidy_name(home)} {fixture['home_score']} - "
+            f"{fixture['away_score']} {tidy_name(away)}"
         )
     description.append(f"Source: {fixture['source']}")
 
