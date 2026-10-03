@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-03T02:04:52.272180+00:00",
+  "updated": "2026-10-03T10:28:22.474504+00:00",
   "warnings": [],
   "events": {
     "E2026_376@paobc-calendar": {
@@ -157,6 +157,10 @@
     "paobc-super-cup-panathinaikos-bc-aktor-paok-bc-1@paobc-calendar": {
       "fingerprint": "a29649a4886c3be0",
       "sequence": 1
+    },
+    "paobc-stoiximan-gbl-panathinaikos-bc-aktor-vikos-falcons-1@paobc-calendar": {
+      "fingerprint": "24fca47a30d72f71",
+      "sequence": 0
     }
   }
 }
