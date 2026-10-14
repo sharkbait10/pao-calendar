@@ -1,6 +1,8 @@
 {
-  "updated": "2026-10-10T02:24:39.947519+00:00",
-  "warnings": [],
+  "updated": "2026-10-14T01:58:40.829400+00:00",
+  "warnings": [
+    "paobc.gr scrape failed (BrowserType.launch: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell\n\u2554\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2557\n\u2551 Looks like Playwright was just installed or updated.       \u2551\n\u2551 Please run the following command to download new browsers: \u2551\n\u2551                                                            \u2551\n\u2551     playwright install                                     \u2551\n\u2551                                                            \u2551\n\u2551 <3 Playwright Team                                         \u2551\n\u255a\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u255d) - EuroLeague only"
+  ],
   "events": {
     "E2026_376@paobc-calendar": {
       "fingerprint": "0bcdaefc4a911a8e",
@@ -135,8 +137,8 @@
       "sequence": 1
     },
     "E2026_47@paobc-calendar": {
-      "fingerprint": "80fc076a54698fef",
-      "sequence": 1
+      "fingerprint": "607e49769d25222d",
+      "sequence": 2
     },
     "E2026_36@paobc-calendar": {
       "fingerprint": "6f8db464419bf2cc",
@@ -153,18 +155,6 @@
     "E2026_7@paobc-calendar": {
       "fingerprint": "6edf40ad3042ff7b",
       "sequence": 1
-    },
-    "paobc-super-cup-panathinaikos-bc-aktor-paok-bc-1@paobc-calendar": {
-      "fingerprint": "a29649a4886c3be0",
-      "sequence": 1
-    },
-    "paobc-stoiximan-gbl-panathinaikos-bc-aktor-vikos-falcons-1@paobc-calendar": {
-      "fingerprint": "24fca47a30d72f71",
-      "sequence": 0
-    },
-    "paobc-stoiximan-gbl-promitheas-patras-vikos-cola-panathinaikos-bc-aktor-1@paobc-calendar": {
-      "fingerprint": "54627cb61d83b0fb",
-      "sequence": 0
     }
   }
 }
