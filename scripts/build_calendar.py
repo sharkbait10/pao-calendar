@@ -316,9 +316,14 @@ def main() -> int:
     # map (not the timestamp) keeps this from producing a commit every day.
     state_changed = previous != new_state or not state_path.exists()
 
+    # Exit 2 means "calendar written, but a source was skipped". The workflow
+    # turns that into a failed run so a silently degraded feed gets noticed
+    # instead of sitting there missing a whole competition.
+    exit_code = 2 if problems else 0
+
     if not calendar_changed and not state_changed:
         print("no changes - calendar left untouched")
-        return 0
+        return exit_code
 
     if calendar_changed:
         output_path.write_text(
@@ -341,7 +346,7 @@ def main() -> int:
 
     if not calendar_changed:
         print("calendar unchanged; recorded sequence baseline")
-        return 0
+        return exit_code
 
     by_competition: dict[str, int] = {}
     for fixture in fixtures:
@@ -349,7 +354,7 @@ def main() -> int:
     print(f"wrote {output_path}: {len(events)} events " + str(by_competition))
     for summary in changed:
         print(f"  changed: {summary}")
-    return 0
+    return exit_code
 
 
 if __name__ == "__main__":

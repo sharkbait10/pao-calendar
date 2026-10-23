@@ -22,6 +22,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
 
@@ -32,23 +33,30 @@ jobs:
       - name: Install Playwright
         run: pip install -r requirements.txt
 
-      # Chromium is ~150 MB; caching keeps most runs to a few seconds here.
+      # The cache key MUST include the Playwright version. Each release expects a
+      # specific Chromium build, so a version-less key keeps restoring an old
+      # browser, reports a cache hit, and the real binary never gets downloaded.
+      - name: Resolve Playwright version
+        id: pw
+        run: |
+          PW_VERSION=$(pip show playwright | awk '/^Version:/ {print $2}')
+          echo "Playwright $PW_VERSION"
+          echo "version=$PW_VERSION" >> "$GITHUB_OUTPUT"
+
       - name: Cache Chromium
-        id: browser-cache
         uses: actions/cache@v4
         with:
           path: ~/.cache/ms-playwright
-          key: playwright-chromium-${{ runner.os }}
+          key: playwright-${{ runner.os }}-${{ steps.pw.outputs.version }}
 
+      # Run unconditionally. With a warm cache the download is skipped in a few
+      # seconds, and it guarantees the binary is actually present.
       - name: Install Chromium
-        if: steps.browser-cache.outputs.cache-hit != 'true'
         run: playwright install --with-deps chromium
 
-      - name: Install system libraries
-        if: steps.browser-cache.outputs.cache-hit == 'true'
-        run: playwright install-deps chromium
-
       - name: Build calendar
+        id: build
+        continue-on-error: true
         run: python scripts/build_calendar.py
 
       - name: Commit if changed
@@ -62,3 +70,11 @@ jobs:
           git add docs/
           git commit -m "Update fixtures ($(date -u +'%Y-%m-%d %H:%M UTC'))"
           git push
+
+      # Publishing a partial calendar is better than publishing none, but the run
+      # must still go red so the gap is visible rather than silently tolerated.
+      - name: Fail if a source was skipped
+        if: steps.build.outcome == 'failure'
+        run: |
+          echo "::error::A fixture source failed - see the 'Build calendar' step log."
+          exit 1
