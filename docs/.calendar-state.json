@@ -1,8 +1,6 @@
 {
-  "updated": "2026-10-23T01:36:53.243861+00:00",
-  "warnings": [
-    "paobc.gr scrape failed (BrowserType.launch: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell\n\u2554\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2557\n\u2551 Looks like Playwright was just installed or updated.       \u2551\n\u2551 Please run the following command to download new browsers: \u2551\n\u2551                                                            \u2551\n\u2551     playwright install                                     \u2551\n\u2551                                                            \u2551\n\u2551 <3 Playwright Team                                         \u2551\n\u255a\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u255d) - EuroLeague only"
-  ],
+  "updated": "2026-10-23T09:06:04.796132+00:00",
+  "warnings": [],
   "events": {
     "E2026_376@paobc-calendar": {
       "fingerprint": "0bcdaefc4a911a8e",
@@ -155,6 +153,114 @@
     "E2026_7@paobc-calendar": {
       "fingerprint": "6edf40ad3042ff7b",
       "sequence": 1
+    },
+    "paobc-super-cup-panathinaikos-bc-aktor-paok-bc-1@paobc-calendar": {
+      "fingerprint": "a29649a4886c3be0",
+      "sequence": 0
+    },
+    "paobc-stoiximan-gbl-panathinaikos-bc-aktor-vikos-falcons-1@paobc-calendar": {
+      "fingerprint": "24fca47a30d72f71",
+      "sequence": 0
+    },
+    "paobc-stoiximan-gbl-promitheas-patras-vikos-cola-panathinaikos-bc-aktor-1@paobc-calendar": {
+      "fingerprint": "54627cb61d83b0fb",
+      "sequence": 0
+    },
+    "paobc-stoiximan-gbl-panathinaikos-bc-aktor-peristeri-betsson-1@paobc-calendar": {
+      "fingerprint": "aa964477dd0c1e3d",
+      "sequence": 0
+    },
+    "paobc-stoiximan-gbl-panathinaikos-bc-aktor-ask-karditsa-iaponiki-1@paobc-calendar": {
+      "fingerprint": "27a722ad6d18f968",
+      "sequence": 0
+    },
+    "paobc-stoiximan-gbl-aris-bc-panathinaikos-bc-aktor-1@paobc-calendar": {
+      "fingerprint": "1ad93db1f64688e5",
+      "sequence": 0
+    },
+    "paobc-stoiximan-gbl-aek-bc-panathinaikos-bc-aktor-1@paobc-calendar": {
+      "fingerprint": "fda44d21b8d72ef2",
+      "sequence": 0
+    },
+    "paobc-stoiximan-gbl-panathinaikos-bc-aktor-kolossos-h-hotels-collection-1@paobc-calendar": {
+      "fingerprint": "c575a6ca43904a82",
+      "sequence": 0
+    },
+    "paobc-stoiximan-gbl-panathinaikos-bc-aktor-maroussi-1@paobc-calendar": {
+      "fingerprint": "6ec7c3eef68aca36",
+      "sequence": 0
+    },
+    "paobc-stoiximan-gbl-mykonos-betsson-bc-panathinaikos-bc-aktor-1@paobc-calendar": {
+      "fingerprint": "0603f4f3983dbf16",
+      "sequence": 0
+    },
+    "paobc-stoiximan-gbl-panathinaikos-bc-aktor-iraklis-bc-1@paobc-calendar": {
+      "fingerprint": "0adc7919471d8851",
+      "sequence": 0
+    },
+    "paobc-stoiximan-gbl-panathinaikos-bc-aktor-doxa-lefkadas-elabet-1@paobc-calendar": {
+      "fingerprint": "12084ce56afc0957",
+      "sequence": 0
+    },
+    "paobc-stoiximan-gbl-paok-bc-panathinaikos-bc-aktor-1@paobc-calendar": {
+      "fingerprint": "3778222989aab321",
+      "sequence": 0
+    },
+    "paobc-stoiximan-gbl-panathinaikos-bc-aktor-olympiacos-piraeus-1@paobc-calendar": {
+      "fingerprint": "a51e4277f6ecb673",
+      "sequence": 0
+    },
+    "paobc-stoiximan-gbl-maroussi-panathinaikos-bc-aktor-1@paobc-calendar": {
+      "fingerprint": "b9cf4be603dea047",
+      "sequence": 0
+    },
+    "paobc-stoiximan-gbl-panathinaikos-bc-aktor-promitheas-patras-vikos-cola-1@paobc-calendar": {
+      "fingerprint": "a435b1bef3b5945e",
+      "sequence": 0
+    },
+    "paobc-stoiximan-gbl-panathinaikos-bc-aktor-aek-bc-1@paobc-calendar": {
+      "fingerprint": "b3777d1e9d623f86",
+      "sequence": 0
+    },
+    "paobc-stoiximan-gbl-iraklis-bc-panathinaikos-bc-aktor-1@paobc-calendar": {
+      "fingerprint": "7470799397b75c4d",
+      "sequence": 0
+    },
+    "paobc-stoiximan-gbl-doxa-lefkadas-elabet-panathinaikos-bc-aktor-1@paobc-calendar": {
+      "fingerprint": "b296f329b95e9b8e",
+      "sequence": 0
+    },
+    "paobc-stoiximan-gbl-peristeri-betsson-panathinaikos-bc-aktor-1@paobc-calendar": {
+      "fingerprint": "385fbdf319dfcf83",
+      "sequence": 0
+    },
+    "paobc-stoiximan-gbl-panathinaikos-bc-aktor-aris-bc-1@paobc-calendar": {
+      "fingerprint": "bab11c7df1154bf9",
+      "sequence": 0
+    },
+    "paobc-stoiximan-gbl-kolossos-h-hotels-collection-panathinaikos-bc-aktor-1@paobc-calendar": {
+      "fingerprint": "53cb2d63a470a269",
+      "sequence": 0
+    },
+    "paobc-stoiximan-gbl-panathinaikos-bc-aktor-mykonos-betsson-bc-1@paobc-calendar": {
+      "fingerprint": "bdee8257716fe526",
+      "sequence": 0
+    },
+    "paobc-stoiximan-gbl-olympiacos-piraeus-panathinaikos-bc-aktor-1@paobc-calendar": {
+      "fingerprint": "af901620687be465",
+      "sequence": 0
+    },
+    "paobc-stoiximan-gbl-ask-karditsa-iaponiki-panathinaikos-bc-aktor-1@paobc-calendar": {
+      "fingerprint": "92c626c95cbb504e",
+      "sequence": 0
+    },
+    "paobc-stoiximan-gbl-panathinaikos-bc-aktor-paok-bc-1@paobc-calendar": {
+      "fingerprint": "c8ed9b75a71d22d5",
+      "sequence": 0
+    },
+    "paobc-stoiximan-gbl-alcons-panathinaikos-bc-aktor-1@paobc-calendar": {
+      "fingerprint": "f321d2bc69eea5b8",
+      "sequence": 0
     }
   }
 }
