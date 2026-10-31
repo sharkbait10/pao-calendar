@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-28T02:23:29.668112+00:00",
+  "updated": "2026-10-31T02:29:55.813092+00:00",
   "warnings": [],
   "events": {
     "E2026_376@paobc-calendar": {
@@ -119,8 +119,8 @@
       "sequence": 1
     },
     "E2026_88@paobc-calendar": {
-      "fingerprint": "f807beff6d6b99aa",
-      "sequence": 1
+      "fingerprint": "f97a52a7cf33c4e2",
+      "sequence": 2
     },
     "E2026_76@paobc-calendar": {
       "fingerprint": "ab7feebf88b52906",
@@ -175,8 +175,8 @@
       "sequence": 0
     },
     "paobc-stoiximan-gbl-aris-bc-panathinaikos-bc-aktor-1@paobc-calendar": {
-      "fingerprint": "1ad93db1f64688e5",
-      "sequence": 0
+      "fingerprint": "6e7f174c1b1a995c",
+      "sequence": 1
     },
     "paobc-stoiximan-gbl-aek-bc-panathinaikos-bc-aktor-1@paobc-calendar": {
       "fingerprint": "fda44d21b8d72ef2",
