@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18T04:31:53.172757+00:00",
+  "updated": "2026-11-20T04:02:24.371349+00:00",
   "warnings": [],
   "events": {
     "E2026_376@paobc-calendar": {
@@ -103,8 +103,8 @@
       "sequence": 1
     },
     "E2026_121@paobc-calendar": {
-      "fingerprint": "5afc6b6cb2e23315",
-      "sequence": 1
+      "fingerprint": "c54b9d9b6e1f1421",
+      "sequence": 2
     },
     "E2026_119@paobc-calendar": {
       "fingerprint": "78b84cd16d3a860d",
