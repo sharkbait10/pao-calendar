@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20T04:02:24.371349+00:00",
+  "updated": "2026-11-20T14:14:06.982285+00:00",
   "warnings": [],
   "events": {
     "E2026_376@paobc-calendar": {
@@ -39,8 +39,8 @@
       "sequence": 1
     },
     "E2026_285@paobc-calendar": {
-      "fingerprint": "04f946d01d7e42bf",
-      "sequence": 1
+      "fingerprint": "b3a9205e0ee8194e",
+      "sequence": 2
     },
     "E2026_280@paobc-calendar": {
       "fingerprint": "eb38a89c1ee61402",
@@ -95,8 +95,8 @@
       "sequence": 1
     },
     "E2026_146@paobc-calendar": {
-      "fingerprint": "a35c27068dd7bb0e",
-      "sequence": 1
+      "fingerprint": "f571eb05697b413a",
+      "sequence": 2
     },
     "E2026_135@paobc-calendar": {
       "fingerprint": "57227f3d430c12e1",
